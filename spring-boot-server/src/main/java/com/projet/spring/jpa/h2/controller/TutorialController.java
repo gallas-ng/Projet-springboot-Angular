@@ -1,4 +1,4 @@
-package com.bezkoder.spring.jpa.h2.controller;
+package com.projet.spring.jpa.h2.controller;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,8 +18,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.bezkoder.spring.jpa.h2.model.Tutorial;
-import com.bezkoder.spring.jpa.h2.repository.TutorialRepository;
+import com.projet.spring.jpa.h2.model.Tutorial;
+import com.projet.spring.jpa.h2.repository.TutorialRepository;
 
 @CrossOrigin //(origins = "http://localhost:8080")
 @RestController

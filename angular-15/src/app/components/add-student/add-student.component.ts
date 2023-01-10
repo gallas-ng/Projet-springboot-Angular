@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Student} from 'src/app/models/student.model';
+import { Tutorial } from 'src/app/models/tutorial.model';
 import { StudentService } from 'src/app/services/student.service';
 
 @Component({
@@ -11,7 +12,7 @@ export class AddStudentComponent {
 
   student: Student = {
     name: '',
-  
+    tutorial: new Tutorial
   };
   submitted = false;
 
@@ -20,6 +21,7 @@ export class AddStudentComponent {
   saveStudent(): void {
     const data = {
       name: this.student.name,
+      tutorial: new Tutorial
     };
 
     this.studentService.create(data)
@@ -36,6 +38,7 @@ export class AddStudentComponent {
     this.submitted = false;
     this.student = {
       name: '',
+      tutorial: new Tutorial
     };
   }
 

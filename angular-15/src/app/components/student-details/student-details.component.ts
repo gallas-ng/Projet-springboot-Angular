@@ -2,6 +2,7 @@ import { Component, Input, OnInit } from '@angular/core';
 import { StudentService } from 'src/app/services/student.service';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Student } from 'src/app/models/student.model';
+import { Tutorial } from 'src/app/models/tutorial.model';
 
 @Component({
   selector: 'app-student-details',
@@ -14,6 +15,7 @@ export class StudentDetailsComponent implements OnInit {
 
   @Input() currentStudent: Student = {
     name: '',
+    tutorial: new Tutorial
   };
   
   message = '';

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Student } from 'src/app/models/student.model';
+import { Tutorial } from 'src/app/models/tutorial.model';
 import { StudentService } from 'src/app/services/student.service';
 
 @Component({
@@ -10,7 +11,9 @@ import { StudentService } from 'src/app/services/student.service';
 export class StudentsListComponent implements OnInit {
 
   students?: Student[];
-  currentStudent: Student = {};
+  currentStudent: Student = {
+    tutorial: new Tutorial
+  };
   currentIndex = -1;
   name = '';
 
@@ -33,7 +36,8 @@ export class StudentsListComponent implements OnInit {
 
   refreshList(): void {
     this.retrieveStudents();
-    this.currentStudent = {};
+    this.currentStudent = {    tutorial: new Tutorial
+    };
     this.currentIndex = -1;
   }
 
@@ -54,7 +58,8 @@ export class StudentsListComponent implements OnInit {
   }
 
   searchName(): void {
-    this.currentStudent = {};
+    this.currentStudent = {    tutorial: new Tutorial
+    };
     this.currentIndex = -1;
 
     this.studentService.findByName(this.name)

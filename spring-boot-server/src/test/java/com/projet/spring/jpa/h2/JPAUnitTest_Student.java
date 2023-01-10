@@ -1,7 +1,7 @@
-package com.bezkoder.spring.jpa.h2;
+package com.projet.spring.jpa.h2;
 
-import com.bezkoder.spring.jpa.h2.model.Student;
-import com.bezkoder.spring.jpa.h2.repository.StudentRepository;
+import com.projet.spring.jpa.h2.model.Student;
+import com.projet.spring.jpa.h2.repository.StudentRepository;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;

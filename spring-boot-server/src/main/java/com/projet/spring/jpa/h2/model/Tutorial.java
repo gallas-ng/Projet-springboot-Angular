@@ -1,4 +1,4 @@
-package com.bezkoder.spring.jpa.h2.model;
+package com.projet.spring.jpa.h2.model;
 
 import javax.persistence.*;
 
@@ -13,9 +13,11 @@ public class Tutorial {
 	@Column(name = "title")
 	private String title;
 
-	public Tutorial() {
+	//@OneToMany(mappedBy = "tutorial")
+	//private List<Student> students;
 
-	}
+	public Tutorial() {}
+
 
 	public Tutorial(String title) {
 		this.title = title;
@@ -34,6 +36,7 @@ public class Tutorial {
 		this.title = title;
 	}
 
+	public int getGroupSize() {return 2;}
 
 	@Override
 	public String toString() {

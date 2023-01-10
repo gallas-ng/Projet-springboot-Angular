@@ -1,4 +1,4 @@
-package com.bezkoder.spring.jpa.h2;
+package com.projet.spring.jpa.h2;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -7,8 +7,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManager;
 
-import com.bezkoder.spring.jpa.h2.model.Tutorial;
-import com.bezkoder.spring.jpa.h2.repository.TutorialRepository;
+import com.projet.spring.jpa.h2.model.Tutorial;
+import com.projet.spring.jpa.h2.repository.TutorialRepository;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @DataJpaTest

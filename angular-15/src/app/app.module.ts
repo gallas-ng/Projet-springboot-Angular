@@ -11,6 +11,7 @@ import { TutorialsListComponent } from './components/tutorials-list/tutorials-li
 import { AddStudentComponent } from './components/add-student/add-student.component';
 import { StudentsListComponent } from './components/student-list/student-list.component';
 import { StudentDetailsComponent } from './components/student-details/student-details.component';
+import { GroupListComponent } from './group-list/group-list.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { StudentDetailsComponent } from './components/student-details/student-de
     TutorialsListComponent,
     AddStudentComponent,
     StudentsListComponent,
-    StudentDetailsComponent
+    StudentDetailsComponent,
+    GroupListComponent
   ],
   imports: [
     BrowserModule,

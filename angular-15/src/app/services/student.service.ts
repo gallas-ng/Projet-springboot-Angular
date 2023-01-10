@@ -40,5 +40,9 @@ export class StudentService {
     return this.http.get<Student[]>(`${baseUrl}?title=${name}`);
 
   }
+
+  getGroups(): Observable<any> {
+    return this.http.get(`${baseUrl}/groups`);
+  }
   
 }

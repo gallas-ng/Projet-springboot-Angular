@@ -1,4 +1,4 @@
-package com.bezkoder.spring.jpa.h2.model;
+package com.projet.spring.jpa.h2.model;
 
 import javax.persistence.*;
 
@@ -13,12 +13,24 @@ public class Student {
     @Column(name = "name")
     private String name;
 
-    public Student() {
+    public Tutorial getTutorial() {
+        return this.tutorial;
+    }
 
+    public void setTutorial(Tutorial tutorial) {
+        this.tutorial = tutorial;
+    }
+
+    @ManyToOne
+    private Tutorial tutorial;
+
+    public Student() {
+        this.tutorial = null;
     }
 
     public Student(String name) {
         this.name = name;
+        this.tutorial = null;
     }
 
     public long getId() {
